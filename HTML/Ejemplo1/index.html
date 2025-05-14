@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina web</title>
+    <link rel="icon" href="/HTML/Ejemplo1/images/code.png"> <!--Cambiar icono de pestaña-->
+    <link rel="stylesheet" href="/HTML/Ejemplo1/estilos.css">
 </head>
+
 <body>
     <!--This is the title in a web page-->
-    <h1>GUÍA TEÓRICA COMPLETA DE HTML</h1>
+    <h1 class="titulo">GUÍA TEÓRICA COMPLETA DE HTML</h1>
     <!--This is a paragraph -->
-    <p><b>Objetivo: </b> Profundizar en los fundamentos de HTML de forma progresiva, sentando las bases para maquetar documentos web accesibles, semánticos y optimizados.</p>
+    <p class="texto"><b>Objetivo: </b> Profundizar en los fundamentos de HTML de forma progresiva, sentando las bases para maquetar documentos web accesibles, semánticos y optimizados.</p>
     <!--
         b = For bold a word
         i = For italic
@@ -20,29 +23,29 @@
     -->
 
     <!-- This is another title in html (h1-h6)-->
-    <h2>Introducción y contexto histórico</h2>
-    <p>HTML nació en 1991 de la mano de Tim Berners-Lee como un formato sencillo para compartir documentos científicos en la Web. Desde entonces ha evolucionado a través de <b>HTML 2.0, 3.2, 4.01 (Transitional/Strict)</b> y llegó a <b>XHTML 1.0/1.1</b> (versión basada en XML). En 2014 se estandariza <b>HTML5</b>, hoy en desarrollo permanente por el <b>WHATWG</b> (Living Standard). Comprender esta evolución explica por qué existen <i>quirks mode,</i> atributos obsoletos y mejores prácticas modernas.</p>
+    <h2 class="titulo">Introducción y contexto histórico</h2>
+    <p class="texto">HTML nació en 1991 de la mano de Tim Berners-Lee como un formato sencillo para compartir documentos científicos en la Web. Desde entonces ha evolucionado a través de <b>HTML 2.0, 3.2, 4.01 (Transitional/Strict)</b> y llegó a <b>XHTML 1.0/1.1</b> (versión basada en XML). En 2014 se estandariza <b>HTML5</b>, hoy en desarrollo permanente por el <b>WHATWG</b> (Living Standard). Comprender esta evolución explica por qué existen <i>quirks mode,</i> atributos obsoletos y mejores prácticas modernas.</p>
 
 
-    <h2>HTML en la Industria Web: Relevancia Actual</h2>
-    <h3>Importancia Fundamental</h3>
-    <p>HTML sigue siendo la <b>piedra angular</b> del desarrollo web:</p>
+    <h2 class="titulo">HTML en la Industria Web: Relevancia Actual</h2>
+    <h3 class="titulo">Importancia Fundamental</h3>
+    <p class="texto">HTML sigue siendo la <b>piedra angular</b> del desarrollo web:</p>
 
 
-    <p>
+    <p class="texto">
         <ul>
-            <li><b>100% de sitios web</b> lo utilizan como base (W3Techs)</li>
-            <li><b>Habilidad esencial </b>en el 98% de ofertas laborales para desarrolladores web (Indeed 2025)</li>
-            <li>Compatible con todos los <b>frameworks modernos </b>(React, Angular, Vue)</li>
+            <li class="texto"><b>100% de sitios web</b> lo utilizan como base (W3Techs)</li>
+            <li class="texto"><b>Habilidad esencial </b>en el 98% de ofertas laborales para desarrolladores web (Indeed 2025)</li>
+            <li class="texto">Compatible con todos los <b>frameworks modernos </b>(React, Angular, Vue)</li>
         </ul>
     </p>
 
 
-    <h3>Mercado laboral</h3>
+    <h3 class="titulo">Mercado laboral</h3>
     
 
     <!--This a table-->
-    <table border="1">
+    <table border="1" class="texto">
         <!--headers in a table-->
         <thead>
             <!--Rows in a table-->
@@ -99,48 +102,48 @@
 
     </table>
 
-    <h3>Tendencias Actuales</h3>
-    <p>
+    <h3 class="titulo">Tendencias Actuales</h3>
+    <p class="texto">
         <ol>
-        <li><b>HTML5 como estándar dominante</b> (92% de penetración global)</li>
-        <li><b>Web Components</b> (Custom Elements + Shadow DOM)</li>
-        <li><b>Integración con tecnologías emergentes:</b></li>
+        <li class="texto"><b>HTML5 como estándar dominante</b> (92% de penetración global)</li>
+        <li class="texto"><b>Web Components</b> (Custom Elements + Shadow DOM)</li>
+        <li class="texto"><b>Integración con tecnologías emergentes:</b></li>
         <ul>
-            <li>Realidad Aumentada <i>(model-viewer).</i></li>
-            <li>Aplicaciones PWA (Manifiestos web).</li>
-            <li>Email HTML para marketing digital.</li>
+            <li class="texto">Realidad Aumentada <i>(model-viewer).</i></li>
+            <li class="texto">Aplicaciones PWA (Manifiestos web).</li>
+            <li class="texto">Email HTML para marketing digital.</li>
         </ul>
     </ol>
     </p>
 
     <hr>
 
-    <h2>¿Qué es HTML en profundidad?</h2>
+    <h2 class="titulo">¿Qué es HTML en profundidad?</h2>
 
-    <p>
+    <p class="texto">
         <ul>
-            <li><b>Lenguaje de marcado</b> ➜ declara la <b>semántica</b> de cada parte (qué es), no cómo se verá.</li>
-            <li><b>Declarativo</b> ➜ describe el resultado deseado; el navegador decide la representación.</li>
-            <li><b>Independiente de plataforma</b> ➜ cualquier SO con <i>user agent</i> lo interpreta.</li>
+            <li class="texto"><b>Lenguaje de marcado</b> ➜ declara la <b>semántica</b> de cada parte (qué es), no cómo se verá.</li>
+            <li class="texto"><b>Declarativo</b> ➜ describe el resultado deseado; el navegador decide la representación.</li>
+            <li class="texto"><b>Independiente de plataforma</b> ➜ cualquier SO con <i>user agent</i> lo interpreta.</li>
         </ul>
     </p>
 
 
-    <p> <b>No posee lógica de control</b> (bucles, condicionales). Para interacción se recurre a JavaScript.</p>
+    <p class="texto"> <b>No posee lógica de control</b> (bucles, condicionales). Para interacción se recurre a JavaScript.</p>
 
-    <p>Imagina que construir una página web es como hacer un edificio:
+    <p class="texto">Imagina que construir una página web es como hacer un edificio:
         <ul>
-            <li><b>HTML son los ladrillos: </b>Define la estructura básica (dónde van las paredes, puertas, ventanas)</li>
-            <li><b>CSS es la pintura y decoración:</b>Decide colores, estilos y aspecto visual</li>
-            <li><b> JavaScript es la electricidad: </b>Agrega interactividad y funciones dinámicas</li>
+            <li class="texto"><b>HTML son los ladrillos: </b>Define la estructura básica (dónde van las paredes, puertas, ventanas)</li>
+            <li class="texto"><b>CSS es la pintura y decoración:</b>Decide colores, estilos y aspecto visual</li>
+            <li class="texto"><b> JavaScript es la electricidad: </b>Agrega interactividad y funciones dinámicas</li>
         </ul>
     </p>
 
 
-    <h3>Analogías Cotidianas</h3>
-    <p>
+    <h3 class="titulo">Analogías Cotidianas</h3>
+    <p class="texto">
         <ol>
-            <li>
+            <li class="texto">
                 <b>Como un periódico:</b>
                 <ul>
                     <li>HTML organiza las secciones (titulares, artículos, imágenes)</li>
@@ -148,12 +151,12 @@
                 </ul>
             </li>
 
-            <li>
+            <li class="texto">
                 <b>Como el esqueleto humano:</b>
                 <ul>
-                    <li>HTML es la estructura ósea (huesos)</li>
-                    <li>CSS sería la piel y apariencia</li>
-                    <li>JavaScript serían los músculos que permiten movimiento</li>
+                    <li class="texto">HTML es la estructura ósea (huesos)</li>
+                    <li class="texto">CSS sería la piel y apariencia</li>
+                    <li class="texto">JavaScript serían los músculos que permiten movimiento</li>
 
                 </ul>
             </li>
@@ -162,68 +165,68 @@
 
     <hr>
 
-    <h2>El ciclo de vida del documento y el DOM</h2>
+    <h2 class="titulo">El ciclo de vida del documento y el DOM</h2>
 
-    <h3>¿Qué es el DOM?</h3>
+    <h3 class="titulo">¿Qué es el DOM?</h3>
 
-    <p>
+    <p class="texto">
         Imagina que el DOM (Document Object Model) es como un árbol genealógico de tu página web:
         <ul>
-            <li><b>Es una representación en memoria</b> de todos los elementos de tu página</li>
-            <li><b>Organiza todo jerárquicamente, </b>como un árbol familiar con padres, hijos y hermanos</li>
-            <li> <b>Es dinámico y manipulable </b>con JavaScript, como si pudieras reorganizar las ramas del árbol</li>
+            <li class="texto"><b>Es una representación en memoria</b> de todos los elementos de tu página</li>
+            <li class="texto"><b>Organiza todo jerárquicamente, </b>como un árbol familiar con padres, hijos y hermanos</li>
+            <li class="texto"> <b>Es dinámico y manipulable </b>con JavaScript, como si pudieras reorganizar las ramas del árbol</li>
         </ul>
     </p>
 
-    <h4>Analogía: El DOM como una casa de muñecas</h4>
-    <p>
+    <h4 class="titulo">Analogía: El DOM como una casa de muñecas</h4>
+    <p class="texto">
         Piensa en una casa de muñecas donde:
         <ul>
-            <li>La casa completa es el documento (document)</li>
-            <li>Cada habitación es una sección (div, section)</li>
-            <li>Los muebles son elementos individuales (p, img, button)</li>
-            <li>Puedes mover, añadir o quitar muebles (manipular el DOM con JavaScript)</li>
+            <li class="texto">La casa completa es el documento (document)</li>
+            <li class="texto">Cada habitación es una sección (div, section)</li>
+            <li class="texto">Los muebles son elementos individuales (p, img, button)</li>
+            <li class="texto">Puedes mover, añadir o quitar muebles (manipular el DOM con JavaScript)</li>
         </ul>
     </p>
 
-    <h4>Visualización del DOM</h4>
+    <h4 class="titulo">Visualización del DOM</h4>
     <img src="/HTML/Ejemplo1/images/DOM.png" alt="imagen_de_visualizacion_del_DOM">
 
-    <h4>Cómo funciona realmente</h4>
-    <p>
+    <h4 class="titulo">Cómo funciona realmente</h4>
+    <p class="texto">
         <ol>
 
-            <li>
+            <li class="texto">
                 <b>Parsing: </b>el navegador lee tu código HTML y lo convierte en el árbol DOM
                 <ul>
-                    <li>
+                    <li class="texto">
                         <i>Como leer los planos de una casa y construir una maqueta</i>
                     </li>
                 </ul>
             </li>
 
-            <li>
+            <li class="texto">
                 <b>Render Tree: </b>combina el DOM (estructura) + CSSOM (estilos)
                 <ul>
-                    <li>
+                    <li class="texto">
                         <i>Como decidir qué muebles van en cada habitación y de qué color</i>
                     </li>
                 </ul>
             </li>
 
-            <li>
+            <li class="texto">
                 <b>Layout: </b>calcula exactamente dónde va cada elemento y qué tamaño tiene
                 <ul>
-                    <li>
+                    <li class="texto">
                         <i>Como medir cada habitación y colocar los muebles en su sitio exacto</i>
                     </li>
                 </ul>
             </li>
 
-            <li>
+            <li class="texto">
                 <b>Paint & Composite: </b>dibuja todo en la pantalla, capa por capa
                 <ul>
-                    <li>
+                    <li class="texto">
                         <i>Como pintar las paredes, colocar los muebles y hacer fotos del resultado</i>
                     </li>
                 </ul>
@@ -232,30 +235,30 @@
         </ol>
     </p>
 
-    <h3>Por qué es importante entender el DOM</h3>
-    <p>
+    <h3 class="titulo">Por qué es importante entender el DOM</h3>
+    <p class="texto">
         <ul>
-            <li>
+            <li class="texto">
                 <b>Para desarrolladores: </b>Permite manipular la página dinámicamente
             </li>
-            <li>
+            <li class="texto">
                 <b>Para optimización: </b>Modificar el DOM constantemente es costoso (como estar moviendo muebles todo el tiempo)
             </li>
-            <li>
+            <li class="texto">
                 <b>Para debugging: </b>Cuando algo no se ve bien, necesitas entender qué parte del árbol está mal
             </li>
-            <li>
+            <li class="texto">
                 <b>Consejo práctico: </b>Puedes ver el DOM de cualquier página web usando las herramientas de desarrollo del navegador (F12 o clic derecho → "Inspeccionar")
             </li>
         </ul>
     </p>
 
-    <h2>Estructura mínima de un documento</h2>
+    <h2 class="titulo">Estructura mínima de un documento</h2>
     <img src="/HTML/Ejemplo1/images/estructuraMinimaDocumento.png" alt="estructura_minima_de_un_documento">
 
-    <h3>Conceptos Clave</h3>
+    <h3 class="titulo">Conceptos Clave</h3>
     
-    <table border="1">
+    <table border="1" class="texto">
         <thead>
             <tr>
                 <th>Término Técnico</th>
