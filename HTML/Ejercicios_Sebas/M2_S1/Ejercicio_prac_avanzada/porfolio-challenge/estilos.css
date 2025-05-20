@@ -6,4 +6,58 @@
 html{
     font-family:sans-serif;
     line-height:1.5;
+    background-color: #faf3fd;
+}
+
+.cabeza{
+    background-color: #3e1d4c;
+    position: sticky
+}
+
+.texto_titulo{
+    color: beige;
+    text-align: center;
+}
+.texto_titulo a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    color: azure;
+}
+
+#nombre {
+    font-size: 40px;
+}
+
+.texto_parrafo {
+    font-size: 20px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.imagen {
+    width: 300px;
+}
+
+
+.pie_de_pagina {
+    background-color: #e5a9ff;
+    width: 100%;
+    height: 100px;
+    position: center;
+
+}
+
+.texto_pie_pagina {
+    font-size: 20px;
+    text-align: center;
+}
+
+.notas_pie {
+    padding: 30px;
+
 }
