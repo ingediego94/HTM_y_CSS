@@ -25,16 +25,49 @@
 
 .general{
     background-color: blue;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 0px;
+    margin: 30px;
     padding: 30px;
+    display: flex;
+    gap: 30px;
+
 }
 
 .cuerpo_izq{
     background-color: yellow;
-    margin: 20px;
     padding: 20px;
+    width: 300px;
+    
 }
+
+
+
+.cuerpo_der{
+    background-color: greenyellow;
+    padding: 20px;
+    width: 600px;
+}
+
+.general div img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#imagen_izq{
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#imagen_der{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+
 
 
