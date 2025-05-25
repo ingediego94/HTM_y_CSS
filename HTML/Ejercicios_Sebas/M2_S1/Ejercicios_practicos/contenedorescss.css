@@ -27,9 +27,17 @@
     background-color: blue;
     margin: 30px;
     padding: 30px;
+
+
+}
+
+.parrafo_general{
+    padding: 20px;
+}
+
+.dividido{
     display: flex;
     gap: 30px;
-
 }
 
 .cuerpo_izq{
@@ -68,6 +76,42 @@
     display: block;
 }
 
+.parrafo_general{
+    background-color: burlywood;
+    
+}
+
+.parrafo{
+    background-color: cadetblue;
+    margin-bottom: 10px;
+}
 
 
 
+
+.pie{
+    background-color: aqua;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.pie1{
+    background-color: chocolate;
+}
+
+
+.pie2{
+    background-color: blueviolet;
+}
+
+.titulos_pie{
+    text-align: center;
+    margin: 20px;
+}
+
+.parrafos_pie{
+    text-align: left;
+    
+}
