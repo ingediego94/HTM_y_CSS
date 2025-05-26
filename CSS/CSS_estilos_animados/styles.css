@@ -1,0 +1,31 @@
+body {
+    background-color: #21202c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 2s ease;  /* Transition ONLY on transform */
+  }
+  
+  /* Box Colors */
+  .color1 { background-color: #b388f4; }
+  .color2 { background-color: #a66cff; }
+  .color3 { background-color: #814de1; }
+  
+  /* Hover Effects */
+  .translateX:hover { transform: translateX(100px); }
+  .rotate:hover     { transform: rotate(360deg); }
+  .rotateX:hover    { transform: rotateX(360deg); }
+  .rotateY:hover    { transform: rotateY(360deg); }
+  .scaleX:hover     { transform: scaleX(1.5); }
+  .scale:hover      { transform: scale(1.3); }
+  

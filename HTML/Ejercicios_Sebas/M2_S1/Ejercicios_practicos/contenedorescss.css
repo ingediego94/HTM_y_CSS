@@ -41,10 +41,16 @@
 }
 
 .cuerpo_izq{
-    background-color: yellow;
-    padding: 20px;
+    background-color: rgb(226, 226, 41);
     width: 300px;
-    
+    padding: 20px;
+    border: 3px solid black;
+    margin: 15px;
+    transition: background-color 0.9s ease;
+}
+
+.cuerpo_izq:hover {
+    background-color: aqua;
 }
 
 
@@ -66,6 +72,14 @@
     max-width: 100%;
     height: auto;
     width: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
+    border-radius: 6px;
+}
+
+#imagen_izq:hover {
+    cursor: pointer;
+    
 }
 
 #imagen_der{
@@ -74,6 +88,7 @@
     height: auto;
     width: auto;
     display: block;
+    transform: rotate(180deg);
 }
 
 .parrafo_general{
@@ -84,6 +99,10 @@
 .parrafo{
     background-color: cadetblue;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
 }
 
 
