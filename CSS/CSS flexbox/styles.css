@@ -9,6 +9,8 @@
 .display_row {
     display: flex;
     flex-direction: row;
+
+    background-color: beige;
 }
 
 .row {
@@ -25,6 +27,8 @@
 .display_reverse{
     display: flex;
     flex-direction: row-reverse;
+
+    background-color: rgb(0, 255, 119);
 }
 
 .reverse {
@@ -229,12 +233,215 @@
 }
 
 
+/*DISPLAY FLEX  - ORDER*/
+.flex-order{
+    display: flex;
+    background-color: #df86ff;
+
+}
+
+.order_ok1{
+    order: 1;
+
+    height: 70px;
+    width: 70px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    margin: 3px;
+}
+
+.order_ok2{
+    order: -1;
+
+    height: 70px;
+    width: 70px;
+    background-color: rgb(39, 60, 223);
+    border: 2px solid black;
+    margin: 3px;
+}
+
+.order_ok{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(205, 112, 50);
+    border: 2px solid black;
+    margin: 3px;
+}
 
 
 
+/*DISPLAY FLEX  - FLEX-GROW
+rellena el espacio sobrante del contenedor
+*/
+
+.flex-grow {
+    display: flex;
+    gap: 10px;
+}
+
+.grow_ok2{
+    flex-grow: 1;
+
+    height: 70px;
+    width: 70px;
+    background-color: rgb(205, 202, 50);
+    border: 2px solid black;
+}
+
+.grow_ok{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(205, 112, 50);
+    border: 2px solid black;
+}
+
+/*FLEX GROW 2,  con aplicado a 2 o mas elementos. Llena el espacio sobrante del contenedor,
+pero le asigna mas contenido a aquel que tenga el numero mas alto, mientras que al resto
+les asigna menos cantidad de ese espacio*/
+
+.flex-grow2 {
+    display: flex;
+    gap: 10px;
+}
+
+.grow_1_ok2{
+    flex-grow: 2;
+
+    height: 70px;
+    width: 70px;
+    background-color: rgb(58, 205, 50);
+    border: 2px solid black;
+}
+
+.grow_1_ok{
+    flex-grow: 1;
+
+    height: 70px;
+    width: 70px;
+    background-color: rgb(205, 50, 50);
+    border: 2px solid black;
+}
+
+
+/*FLEX-SHRINK  */
+.flex-shrink{
+    display: flex;
+    gap: 10px;
+}
+
+.shrink_ok {
+    flex-shrink: 1;
+
+    height: 70px;
+    width: 150px;
+    background-color: rgb(171, 50, 205);
+    border: 2px solid black;
+}
 
 
 
+/*FLEX- BASIS*/
+/*Define el ancho o el alto base de un elemento (depende si está distribuido en fila o en columna)*/
+
+.flex-basis{
+    display: flex;
+    gap: 10px;
+}
+
+.basis_ok{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 2px solid blue;
+}
+
+.basis_ok3{
+    flex-basis: 200px; /*Mantendrá este tamaño base cuando el espacio se lo permita*/
+    
+    width: 100px; /*Este se omite porque ahora toma los 200px del flex-basis.*/
+    height: 100px;
+    background-color: cyan;
+    border: 2px solid blue;
+}
+
+
+
+/*FLEX-WRAP */
+/*Por defecto los elementos se distribuyen en una sola linea, con flex-wrap se puede hacer que estos pasen
+a varias lineas si no hay espacio suficiente en el contenendor.
+Cuando estos estan en multiples lineas, se puede usar ALIGN-CONTENT para controlar como se distribuyen las
+lineas a lo largo del contenedor.
+*/
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;  /*wrap-reverse: pone el ultimo de primero*/
+    gap: 10px;
+
+    background-color: rgb(248, 152, 97);
+}
+
+.wrap_ok{
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+}
+
+
+
+/*ALIGN SELF: 
+Es como un align items pero para un solo elemento.
+*/
+
+.flex-align_self{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    height: 200px;
+    background-color: rgb(247, 247, 76);
+}
+
+.align_self_ok3{
+    align-self: center;     /*flex-end*/
+
+    border: 2px solid rgb(199, 18, 18);
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.align_self_ok {
+    border: 2px solid black;
+    width: 150px;
+    height: 50px;
+}
+
+
+
+/*ALIGN - CONTENT
+
+*/
+
+.flex-align_content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;      /*center, flex-start, flex-end, space-between, space-around*/
+
+    background-color: pink;
+    width: 800px;
+    height: 400px;
+    gap: 10px;
+}
+
+.align_content_ok{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+}
 
 
 
