@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*GRID 
+permite que sus hijos sean distribuidos de manera controlada mediante propiedades como 
+GRID-TEMPLATE-COLUMNS y GRID-TEMPLATE-ROWS */
+.container {
+    display: grid;      /**/
+    grid-template-columns: 200px 1fr;   /*Se definieron 2 cols (200px y otra de 1fr [lo que resta de la pantalla] 
+                                            Define el tamaño de las columnas (fr = fraccion)*/
+    grid-template-rows: 100px auto;     /*Se definieron 2 filas, una de 100px y la otra de ancho automatico*/
+
+    /*grid-template-columns: 1fr 2fr 1fr;   La segunda columna ocupa el doble de espacio que la 1ra y 3er columna*/
+
+
+    background-color: aqua;
+    height: 300px;
+}
+
+.hijo_container {
+    background-color: red;
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/*SEPARACION  CON GRID-GAP*/
+.separacion_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    background-color: pink;
+}
+
+.elemento1{
+    background-color: rgb(225, 225, 74);
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*Posicionar elementos con GRID-COLUMN Y GRID-ROW*/
+.grid_column_y_row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /*Esto genera tres columnas, cada una ocupando una fracción del espacio disponible. */
+    grid-gap: 10px;
+
+    background-color: rgb(231, 87, 87);
+}
+
+.grid_row_1{
+    grid-column: 1 / 3;     /*Ocupa de la columna 1 a la 3.  Combina 1 a 3 */
+    grid-row: 1 / 2;        /*Ocupa de la fila 1 a la 2. Combina 1 a 2. */
+    background-color: #4ceb17;
+}
+
+
+.grid_row{
+    background-color: rgb(25, 107, 250);
+}
+
+/*
+repeat(), que nos permite repetir un patrón de columnas o filas sin tener que escribir 
+cada una manualmente. Además, podemos hacer uso de auto-fill y auto-fit para crear layouts 
+que se ajusten automáticamente al tamaño de la pantalla. 
+
+repeat(): Repite un número específico de columnas o filas. 
+
+auto-fill: Llena el espacio disponible con tantas columnas o filas como quepan, dejando el resto vacío. 
+
+auto-fit: Ajusta las columnas o filas al tamaño del contenedor, adaptándose al contenido.
+*/
+
+/*-------------------------------------------------------------------------*/
+
+.autos_fill_fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    
+    /*Crea tantas cols de al menos 100px como quepan en el contenedor, si el espacio es mayor, 
+    las cols se expanden automaticamente*/
+    grid-gap: 10px;
+
+    background-color: #a840f8;
+}
+
+.autos_fills_fit{
+    background-color: beige;
+}
